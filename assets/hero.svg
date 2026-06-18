@@ -1,0 +1,110 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Loop Engineering / Yugong overview</title>
+  <desc id="desc">A readable overview of the Loop Engineering skill: six steps, deliverables, and guardrails.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1280" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8F5EC"/>
+      <stop offset="1" stop-color="#E9E1D1"/>
+    </linearGradient>
+    <linearGradient id="ink" x1="96" y1="72" x2="1184" y2="648" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#17171B"/>
+      <stop offset="1" stop-color="#27242A"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FF6A3D"/>
+      <stop offset="1" stop-color="#D33618"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" stroke="#1B1A1D" stroke-opacity=".06" stroke-width="1"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#0F0E10" flood-opacity=".18"/>
+    </filter>
+    <style>
+      .sans{font-family:sans-serif}
+      .mono{font-family:monospace}
+      .serif{font-family:serif}
+      .small{font-size:18px;letter-spacing:.08em}
+      .body{font-size:25px;line-height:1.45}
+      .label{font-size:17px;letter-spacing:.14em;text-transform:uppercase}
+      .step{font-size:22px;font-weight:700}
+      .muted{fill:#77706A}
+      .inkText{fill:#F8F5EC}
+      .dark{fill:#1A191D}
+    </style>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#paper)"/>
+  <rect width="1280" height="720" fill="url(#grid)"/>
+  <rect x="44" y="44" width="1192" height="632" rx="28" fill="#FDFBF4" stroke="#17171B" stroke-opacity=".12"/>
+
+  <g filter="url(#shadow)">
+    <rect x="86" y="76" width="1108" height="568" rx="26" fill="url(#ink)"/>
+    <rect x="86" y="76" width="1108" height="568" rx="26" stroke="#FFFFFF" stroke-opacity=".08"/>
+  </g>
+
+  <g transform="translate(126 112)">
+    <text class="mono label" fill="#FF8966">AGENT SKILL · LOOP ENGINEERING</text>
+    <text class="serif inkText" x="0" y="68" font-size="68" font-weight="800">Loop</text>
+    <text class="serif inkText" x="0" y="132" font-size="68" font-weight="800">Engineering</text>
+    <text class="serif inkText" x="0" y="194" font-size="58" font-weight="700">愚公</text>
+    <text class="sans inkText body" x="0" y="250">把模糊愿望锻造成可验证 goal，</text>
+    <text class="sans inkText body" x="0" y="288">再交付能自跑的 agent loop。</text>
+
+    <g transform="translate(0 360)">
+      <rect width="428" height="160" rx="16" fill="#F8F5EC"/>
+      <text class="mono label dark" x="24" y="36">DELIVERABLES</text>
+      <text class="sans dark body" x="24" y="78">Loop Spec</text>
+      <text class="sans dark body" x="24" y="116">Claude Code / Codex 命令</text>
+      <text class="sans dark body" x="24" y="154">manifest · templates · prompts</text>
+    </g>
+  </g>
+
+  <g transform="translate(650 116)">
+    <text class="mono label" fill="#C9C1B8">SIX MOVES</text>
+    <g transform="translate(0 36)">
+      <g>
+        <circle cx="28" cy="28" r="28" fill="url(#accent)"/>
+        <text class="mono" x="28" y="35" text-anchor="middle" font-size="20" font-weight="800" fill="#fff">1</text>
+        <text class="sans step inkText" x="76" y="36">采石</text>
+        <text class="sans muted" x="136" y="36" font-size="21">把愿望拆成循环单元</text>
+      </g>
+      <g transform="translate(0 68)">
+        <circle cx="28" cy="28" r="28" fill="#F8F5EC"/>
+        <text class="mono dark" x="28" y="35" text-anchor="middle" font-size="20" font-weight="800">2</text>
+        <text class="sans step inkText" x="76" y="36">立志</text>
+        <text class="sans muted" x="136" y="36" font-size="21">锻造二元可验证判据</text>
+      </g>
+      <g transform="translate(0 136)">
+        <circle cx="28" cy="28" r="28" fill="#F8F5EC"/>
+        <text class="mono dark" x="28" y="35" text-anchor="middle" font-size="20" font-weight="800">3</text>
+        <text class="sans step inkText" x="76" y="36">分工</text>
+        <text class="sans muted" x="136" y="36" font-size="21">maker / checker 分离</text>
+      </g>
+      <g transform="translate(0 204)">
+        <circle cx="28" cy="28" r="28" fill="#F8F5EC"/>
+        <text class="mono dark" x="28" y="35" text-anchor="middle" font-size="20" font-weight="800">4</text>
+        <text class="sans step inkText" x="76" y="36">通路</text>
+        <text class="sans muted" x="136" y="36" font-size="21">连接器、worktree、心跳</text>
+      </g>
+      <g transform="translate(0 272)">
+        <circle cx="28" cy="28" r="28" fill="#F8F5EC"/>
+        <text class="mono dark" x="28" y="35" text-anchor="middle" font-size="20" font-weight="800">5</text>
+        <text class="sans step inkText" x="76" y="36">刻石</text>
+        <text class="sans muted" x="136" y="36" font-size="21">manifest 记录状态</text>
+      </g>
+      <g transform="translate(0 340)">
+        <circle cx="28" cy="28" r="28" fill="#F8F5EC"/>
+        <text class="mono dark" x="28" y="35" text-anchor="middle" font-size="20" font-weight="800">6</text>
+        <text class="sans step inkText" x="76" y="36">交令</text>
+        <text class="sans muted" x="136" y="36" font-size="21">渲染命令，停手等人</text>
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(620 548)">
+    <rect width="506" height="64" rx="16" fill="#2F2B2E" stroke="#F8F5EC" stroke-opacity=".14"/>
+    <text class="mono label" fill="#FF8966" x="22" y="28">GUARDRAILS</text>
+    <text class="sans inkText" x="22" y="52" font-size="21">dry-run · 小样本 · HITL · CLI-first · commit 即 push</text>
+  </g>
+</svg>

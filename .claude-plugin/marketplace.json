@@ -6,7 +6,7 @@
     {
       "name": "loop-engineering",
       "description": "Loop Engineering（循环工程）落地脚手架：把模糊任务锻造成二元可验证的 goal，并备齐能自跑的 Loop 全套设定，兼容 Claude Code 与 Codex。",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "author": { "name": "LearnPrompt", "url": "https://github.com/LearnPrompt" },
       "source": "./",
       "category": "productivity",

@@ -17,7 +17,7 @@
 
 ---
 
-![demo](assets/demo.gif)
+![Loop Engineering / 愚公 overview](assets/hero.svg)
 
 ---
 
@@ -49,6 +49,10 @@ Loop Engineering（循环工程 / 环路工程）是 Prompt Engineering → Cont
 ```
 
 外加 manifest/feedback 模板、Codex 等价 Automation 配置。完整范例见 [`examples/luban-fleet-upgrade-case.md`](skills/loop-engineering/examples/luban-fleet-upgrade-case.md)。
+
+### 真实验证回放
+
+![demo](assets/demo.gif)
 
 ## 快速开始
 

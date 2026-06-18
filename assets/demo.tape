@@ -3,13 +3,13 @@
 Output assets/demo.gif
 
 Set Shell bash
-Set FontSize 16
-Set FontFamily "Osaka"
-Set Width 1200
-Set Height 780
+Set FontSize 18
+Set FontFamily "Menlo"
+Set Width 1280
+Set Height 720
 Set Theme "Dracula"
-Set TypingSpeed 45ms
-Set Padding 22
+Set TypingSpeed 38ms
+Set Padding 28
 
 Hide
 Type "cd /Users/carl/Downloads/10_工作区/项目代码/技能与脚本仓库/loop-engineering && clear"
@@ -17,22 +17,22 @@ Enter
 Show
 Sleep 700ms
 
-Type "printf 'Loop Engineering / 愚公 skill package\\n\\n'"
+Type "echo 'Loop Engineering / Yugong'; echo 'Goal + loop handoff, verified locally'; echo"
 Enter
-Sleep 700ms
+Sleep 900ms
 
-Type "npx --yes skills add . --list"
+Type "npx --yes skills add . --list | sed -n '/Available Skills/,+5p'"
 Enter
-Sleep 3.5s
+Sleep 2.8s
 
-Type "printf '\\nCore files:\\n' && find skills/loop-engineering -maxdepth 2 -type f | sort"
+Type "echo; echo 'Core package:'; echo '  SKILL.md'; echo '  references: goal-forging / loop-spec / render / guardrails'; echo '  templates: manifest / maker / checker / feedback'"
 Enter
-Sleep 2s
+Sleep 2.4s
 
-Type "printf '\\nTrigger keywords:\\n' && sed -n '1,18p' skills/loop-engineering/SKILL.md"
+Type "echo; echo 'Six moves:'; echo '  collect -> goal -> split roles'; echo '  connect -> persist state -> handoff command'"
 Enter
-Sleep 3s
+Sleep 2.4s
 
-Type "printf '\\nExample handoff:\\n' && sed -n '70,92p' skills/loop-engineering/examples/luban-fleet-upgrade-case.md"
+Type "echo; echo 'Guardrails:'; echo '  maker/checker split · dry-run first · HITL stops · CLI first'"
 Enter
-Sleep 3.5s
+Sleep 2.8s
