@@ -58,6 +58,22 @@ guardrails：单 skill 最多 3 轮；首跑只放 1～2 仓 dry-run；超 token
 - `luban-feedback.md`：结构化追加每条卡点（现象 / 触发步骤 / 影响 / 建议）——这就是「鲁班自举」的原料。
 - `MAINTENANCE_LOG.md`：人类可读流水账。
 
+### Loop Components Matrix
+
+| Component | Decision | Runtime / file landing |
+|---|---|---|
+| Goal / done_when | manifest 无 pending；done 必须有 draft PR；blocked 必须有原因 | Claude `/goal` 和 Codex Automation prompt 的完成判据 |
+| Intake / units | 每轮处理一个 skill 仓库 | `REPOS.md` + `manifest.json` |
+| Trigger / heartbeat | on-demand drain；可选每周一扫新增 skill | `/goal`；可选 `/loop --schedule "0 9 * * 1"` / Codex cadence |
+| Worktree / isolation | 每个 skill 独立 worktree，处理完即推送，不复用目录 | `git worktree add ../loop-worktrees/<repo>` |
+| Maker | 鲁班 agent 跑验料、访行、过尺、慢刨 | `templates/maker-prompt.md` 渲染后的子 agent prompt |
+| Checker | 独立 agent 验 frontmatter、触发词、check、diff、泄露 | `templates/checker-prompt.md` 渲染后的子 agent prompt |
+| Connectors | `gh` 读仓库/开 PR/开 issue；文件系统读写状态 | `gh` CLI；`manifest.json`、`luban-feedback.md`、`MAINTENANCE_LOG.md` |
+| State / memory | manifest 是事实源；feedback 是鲁班自举原料 | `manifest.json`、`luban-feedback.md`、`MAINTENANCE_LOG.md` |
+| Verification gates | check-skill-repo、secret scan、diff < 50 行非测试 | maker/checker 每轮必跑，证据写入 log |
+| Guardrails / HITL | 不 merge、不发版、不删除；先 2 仓 dry-run；单仓最多 3 轮 | hard_stops 一律 blocked 交人类 |
+| Runtime handoff | Claude Code 和 Codex 双渲染 | `/goal`；Codex on-demand Automation + background worktree |
+
 ### 6. 交令（复制即可开，扳机你扣）
 
 **Claude Code 版：**

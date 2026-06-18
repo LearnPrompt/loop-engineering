@@ -17,19 +17,23 @@ Enter
 Show
 Sleep 700ms
 
-Type "echo 'Loop Engineering / Yugong'; echo 'Goal + loop handoff, verified locally'; echo"
+Type "echo 'Loop Engineering / Yugong'; echo 'Component matrix + loop handoff, verified locally'; echo"
 Enter
 Sleep 900ms
 
-Type "npx --yes skills add . --list | sed -n '/Available Skills/,+5p'"
+Type "npx --yes skills add . --list >/tmp/loop-skills-list.txt"
 Enter
 Sleep 2.8s
 
-Type "echo; echo 'Core package:'; echo '  SKILL.md'; echo '  references: goal-forging / loop-spec / render / guardrails'; echo '  templates: manifest / maker / checker / feedback'"
+Type "grep -E '^[[:space:]│]*loop-engineering[[:space:]]*$' /tmp/loop-skills-list.txt"
+Enter
+Sleep 900ms
+
+Type "echo; echo 'Core package:'; echo '  SKILL.md'; echo '  references: component-stack / loop-spec / render'; echo '  templates: component-matrix / manifest / maker / checker'"
 Enter
 Sleep 2.4s
 
-Type "echo; echo 'Six moves:'; echo '  collect -> goal -> split roles'; echo '  connect -> persist state -> handoff command'"
+Type "echo; echo 'Loop components:'; echo '  goal + intake + trigger + worktree'; echo '  maker/checker + connectors + state + gates'"
 Enter
 Sleep 2.4s
 

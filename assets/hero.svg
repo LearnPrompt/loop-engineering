@@ -1,6 +1,6 @@
 <svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Loop Engineering / Yugong overview</title>
-  <desc id="desc">A readable overview of the Loop Engineering skill: six steps, deliverables, and guardrails.</desc>
+  <desc id="desc">A readable overview of the Loop Engineering skill: component stack, six steps, deliverables, and guardrails.</desc>
   <defs>
     <linearGradient id="paper" x1="0" y1="0" x2="1280" y2="720" gradientUnits="userSpaceOnUse">
       <stop stop-color="#F8F5EC"/>
@@ -48,15 +48,15 @@
     <text class="serif inkText" x="0" y="68" font-size="68" font-weight="800">Loop</text>
     <text class="serif inkText" x="0" y="132" font-size="68" font-weight="800">Engineering</text>
     <text class="serif inkText" x="0" y="194" font-size="58" font-weight="700">愚公</text>
-    <text class="sans inkText body" x="0" y="250">把模糊愿望锻造成可验证 goal，</text>
+    <text class="sans inkText body" x="0" y="250">把模糊愿望装配成完整组件，</text>
     <text class="sans inkText body" x="0" y="288">再交付能自跑的 agent loop。</text>
 
     <g transform="translate(0 360)">
       <rect width="428" height="160" rx="16" fill="#F8F5EC"/>
       <text class="mono label dark" x="24" y="36">DELIVERABLES</text>
-      <text class="sans dark body" x="24" y="78">Loop Spec</text>
-      <text class="sans dark body" x="24" y="116">Claude Code / Codex 命令</text>
-      <text class="sans dark body" x="24" y="154">manifest · templates · prompts</text>
+      <text class="sans dark body" x="24" y="78">Component Matrix</text>
+      <text class="sans dark body" x="24" y="116">Loop Spec + 双 runtime</text>
+      <text class="sans dark body" x="24" y="154">manifest · gates · prompts</text>
     </g>
   </g>
 
@@ -105,6 +105,6 @@
   <g transform="translate(620 548)">
     <rect width="506" height="64" rx="16" fill="#2F2B2E" stroke="#F8F5EC" stroke-opacity=".14"/>
     <text class="mono label" fill="#FF8966" x="22" y="28">GUARDRAILS</text>
-    <text class="sans inkText" x="22" y="52" font-size="21">dry-run · 小样本 · HITL · CLI-first · commit 即 push</text>
+    <text class="sans inkText" x="22" y="52" font-size="21">intake · state · gates · HITL · CLI-first</text>
   </g>
 </svg>
