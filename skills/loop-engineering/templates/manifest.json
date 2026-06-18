@@ -1,0 +1,16 @@
+{
+  "_comment": "愚公『刻石』状态文件。循环每轮先读此处找 status=pending，干完更新。stop_rule: 无 pending 即停。",
+  "loop": "luban-fleet-upgrade",
+  "units": [
+    {
+      "repo": "LearnPrompt/luban-skill",
+      "status": "pending",
+      "pr_url": null,
+      "score_before": null,
+      "score_after": null,
+      "feedback_ids": [],
+      "notes": ""
+    }
+  ],
+  "_status_enum": ["pending", "doing", "done", "blocked"]
+}
