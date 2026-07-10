@@ -161,3 +161,11 @@ Loop Engineering 概念脉络参考 Addy Osmani、Peter Steinberger、Boris Cher
 *移山不靠一锹，靠一个会自己挖的循环。*
 
 </div>
+
+---
+
+<div align="center">
+
+<sub>公众号「卡尔的AI沃茨」 · X @aiwarts · <a href="https://learnprompt.pro/workshop/">learnprompt.pro/workshop</a></sub>
+
+</div>
